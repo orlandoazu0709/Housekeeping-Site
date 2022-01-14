@@ -4,6 +4,8 @@ body {
     font-family: 'Patrick Hand', cursive;
 }
 
+/****************** MOBILE VERSION ******************/
+
 /* MENU AND NAVIGATION BAR */
 .menu {
     background-color: black;
@@ -98,8 +100,8 @@ header button:hover {
     border: 4px solid black;
 }
 
-/* CONTENT */
-.content-title {
+/* SERVICES */
+.services-title {
     width: 100%;
     background-color: black;
     padding-top: 1px;
@@ -109,11 +111,11 @@ header button:hover {
     margin-bottom: 40px;
 }
 
-.content-title h3 {
+.services-title h3 {
     padding-left: 20px;
 }
 
-.content {
+.services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,6 +134,30 @@ header button:hover {
     width: 120px;
     border-radius: 100px;
     object-fit: fill;
+}
+
+.services p {
+    padding-left: 70px;
+    padding-right: 70px;
+    margin-top: -5px;
+    margin-bottom: 40px;
+}
+
+.services button {
+    background-color: black;
+    color: white;
+    border-style: none;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 4px solid black;
+}
+
+.services button:hover {
+    background-color: white;
+    color: black;
 }
 
 /* FOOTER */
