@@ -6,6 +6,7 @@
     <title>Housekeeping and Cleaning Services</title>
     <meta name="description" content="Web developer and designer with a focus on landing pages.">
     <link rel="stylesheet" href="style-home.css">
+    <script src="scripts-home.js"></script>
     <link rel="shortcut icon" href="Logo-Portfolio2.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,8 +16,12 @@
   <body>
       <div class="menu">
         <h1>Cleaning Services</h1>
+        <img  class="menu-icon-bottom" onclick="toggleMenu()" src="menu-icon2.png" alt="active menu icon">
+        <img  class="menu-icon-top" src="menu-icon1.png" onclick="toggleMenu()" alt="inactive menu icon">
+        <img  id="cancel-icon1" class="cancel-icon-bottom" src="cancel-icon1.png" onclick="toggleMenu()" alt="inactive cancel icon">
+        <img id="cancel-icon2" class="cancel-icon-top" src="cancel-icon2.png" onclick="toggleMenu()" alt="active cancel icon">
       </div>
-      <nav>
+      <nav id="nav">
         <ul>
             <li><a href="#">Services</a></li>
             <li><a href="#">Cleaning Process</a></li>
