@@ -16,56 +16,102 @@
   <body>
       <div class="menu">
         <h1>Cleaning Services</h1>
-        <img  class="menu-icon-bottom" onclick="toggleMenu()" src="menu-icon2.png" alt="active menu icon">
-        <img  class="menu-icon-top" src="menu-icon1.png" onclick="toggleMenu()" alt="inactive menu icon">
-        <img  id="cancel-icon1" class="cancel-icon-bottom" src="cancel-icon1.png" onclick="toggleMenu()" alt="inactive cancel icon">
-        <img id="cancel-icon2" class="cancel-icon-top" src="cancel-icon2.png" onclick="toggleMenu()" alt="active cancel icon">
+        <img  class="menu-icon-bottom icon" onclick="toggleMenu()" src="menu-icon2.png" alt="active menu icon">
+        <img  class="menu-icon-top icon" src="menu-icon1.png" onclick="toggleMenu()" alt="inactive menu icon">
+        <img  id="cancel-icon1" class="cancel-icon-bottom icon" src="cancel-icon1.png" onclick="toggleMenu()" alt="inactive cancel icon">
+        <img id="cancel-icon2" class="cancel-icon-top icon" src="cancel-icon2.png" onclick="toggleMenu()" alt="active cancel icon">
       </div>
+      <nav id="desktop-nav">
+        <a href="#services">Services</a>
+        <a href="#">Cleaning Process</a>
+        <a href="#">Free Estimate</a>
+        <a href="#contact-me">Contact Us</a>
+      </nav>
       <nav id="nav">
         <ul>
-            <li><a href="#">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#">Cleaning Process</a></li>
             <li><a href="#">Free Estimate</a></li>
-            <li id="last"><a href="#">Contact Me</a></li>
+            <li id="last"><a href="#contact-me">Contact Us</a></li>
         </ul>
       </nav>
       <header>
         <img src="Cleaning-header1.png" alt="The best cleaning and housekeeping for you.">
         <div class="header-text"> 
             <h1>Housekeeping and Cleaning services.</h1>
-            <h2>The best cleaning, personalized for <span class="header-subtext">you</span> .</h2>
+            <h2>The best cleaning, personalized for <span class="header-subtext">you</span>.</h2>
         </div>
-        <button>Request Cleaning Service</button>
+        <form action="#">
+          <button type="submit">Request Cleaning Service</button>
+        </form>
       </header>
       <div class="services-title">
-          <h3>Services</h3>
+          <h2 id="services">Services</h2>
       </div>
       <div class="services">
+        <h2>Personal, customized services that work for you. Whether it is weekly, biweekly, or even monthly, we have plans that fit your specific schedule and needs.</h2>
         <div class="services-img-wrapper">
             <img  class="services-img" src="dusting.jpg" alt="Light cleaning for your home.">
         </div>
         <h3>Refresh</h3>
-        <p>Whether it is dusting, sweeping, or mopping, light cleaning helps keep one's home spotless and always at its best, providing peace of mind for the whole family.</p>
+        <p>Whether it is dusting, sweeping, or mopping, light cleaning helps keep your home spotless and always at its best, providing peace of mind for your whole family.</p>
         <div class="services-img-wrapper">
             <img class="services-img" src="cleaning.jpg" alt="Regular cleaning for your home.">
         </div>
         <h3>Regular Cleaning</h3>
-        <p>Regular cleaning is crucial for both the health of the house and the family. With a personalized and transparent cleaning plan that works for you, you will always know what goes into cleaning your home, providing the best cleaning for you and your household. </p>
+        <p>With a personalized and transparent cleaning plan that works for you, you will always know what goes into cleaning your home, providing the best cleaning for you and your household. </p>
         <div class="services-img-wrapper">
             <img class="services-img" src="organizing.jpg" alt="Regular cleaning for your home.">
         </div>
-        <h3>Organizing</h3>
-        <p>Insert organizing description.</p>
+        <h3>Organizing | Premium+</h3>
+        <p>Keep your home clean and tidy with our premium services, without worrying about losing your precious time from the most important things in life.</p>
         <div class="services-img-wrapper">
             <img class="services-img" src="deep-clean.jpg" alt="Regular cleaning for your home.">
         </div>
-        <h3>Deep Cleaning</h3>
-        <p>Insert deep cleaning description.</p>
-        <button>Learn about our Cleaning Process</button>
-
+        <h3>Deep Cleaning | Premium+</h3>
+        <p>With a detailed and profound deep cleaning, we make sure to leave your house completely spotless, sanitized, and like new.</p>
+        <p id="services-end-link"><a href="#contact-me">Contact us</a> for more information on our services.</p>
+        <form action="#">
+          <button type="submit">Learn about the Cleaning Process</button>
+        </form>
+      </div>
+      <div class="description">
+        <img src="description-background1.png" alt="Cleaning and Housekeeping description background">
+        <h2>Personalized. Premium. Professional.</h2>
+        <p>Quality cleaning personalized for you, the way you want it, when you want it. Cleaning that works for you.</p>
+        <ul>
+          <li>Customized</li>
+          <li>Quality cleaning</li>
+          <li>Personal</li>
+          <li>Pet friendly</li>
+          <li>Over a decade of expertise</li>
+        </ul>
+      </div>
+      <div class="estimate-section">
+        <h2>Affordable and reliable prices.</h2>
+        <form action="#">
+          <button type="submit">Get a free estimate now!</button>
+        </form>
+      </div>
+      <div class="contact-section">
+        <div class="contact-header">
+          <h2 id="contact-me">Contact Us</h2>
+        </div>
+        <div class="contact-content">
+          <form action="#">
+            <button>Contact us now! ></button>
+          </form>
+          <h3>Phone: <a href="tel:8432272591">843.227.2591</a></h3>
+          <h3>Email: <a href="mailto: azuarah_2504@hotmail.com">azuarah_2504@hotmail.com</a></h3>
+        </div>
       </div>
       <footer>
-          Copyright © 2022
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#">Cleaning Process</a>
+          <a href="#">Contact me</a>
+        </div>
+        <p>Copyright © 2022 Angie Cleaning | Created by <a href="https://orlandoazu0709.github.io/Portfolio/" target="_blank" title="Web developer and designer">Orlando Azuara</a></p>
       </footer>
   </body>
 </html>

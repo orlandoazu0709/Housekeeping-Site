@@ -65,6 +65,10 @@ body {
     display: none;
 }
 
+#desktop-nav {
+    display: none;
+}
+
 
 #nav {
     background-color: black;
@@ -104,7 +108,7 @@ li a {
     color: black;
     background-color: #c2a1c2;
     margin: 0;
-    padding: 30px 0;
+    padding: 20px 0;
     width: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -122,7 +126,7 @@ header {
     width: 100%;
     margin-top: 20px;
     text-align: left;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 header img {
@@ -132,9 +136,9 @@ header img {
 
 .header-text{
     position: absolute;
-    bottom: 30px;
+    bottom: 10%;
     left: 30px;
-    font-size: .8em;
+    font-size: 1em;
     padding-right: 45%;
 }
 
@@ -151,7 +155,7 @@ header button {
     text-align: center;
     left: 50%;
     margin-left: -75px;
-    bottom: -30px;
+    bottom: -50px;
     border-style: none;
     border-radius: 10px;
     border: 4px solid #8b538b
@@ -165,15 +169,15 @@ header button:hover {
 .services-title {
     width: 100%;
     background-color: black;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding: 5px 0;
     color: white;
     font-size: 1.2em;
     margin-bottom: 40px;
 }
 
-.services-title h3 {
+.services-title h2 {
     padding-left: 20px;
+    font-size: 1.2em;
 }
 
 .services {
@@ -181,6 +185,11 @@ header button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.services h2 {
+    margin: 0 60px;
+    margin-bottom: 80px;
 }
 
 .services-img-wrapper {
@@ -198,10 +207,23 @@ header button:hover {
 }
 
 .services p {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 100px;
     margin-top: -5px;
     margin-bottom: 40px;
+    text-align: center;
+}
+
+#services-end-link {
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#services-end-link a {
+    color: black;
+}
+
+#services-end-link a:hover {
+    color: #8b538b;
 }
 
 .services button {
@@ -211,7 +233,7 @@ header button:hover {
     border-radius: 10px;
     text-align: center;
     padding: 15px;
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 30px;
     border: 4px solid black;
 }
@@ -221,12 +243,349 @@ header button:hover {
     color: black;
 }
 
-/* FOOTER */
-footer {
-    height: 40px;
+/* DESCRIPTION */
+.description {
+    position: relative;
     width: 100%;
+    height: 850px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.description img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.description h2 {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    font-size: 1.6em;
+}
+
+.description p {
+    position: absolute;
+    top: 34%;
+    left: 10%;
+    padding-right: 80px;
+    font-size: 1.1em;
+}
+
+.description ul {
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    text-align: left;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.description ul li {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* ESTIMATE SECTION*/
+
+.estimate-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.estimate-section button {
+    border-style: none;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: 4px solid black;
+}
+
+.estimate-section button:hover {
+    background-color: thistle;
+    color: black;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+    height: 500px;
+}
+
+.contact-header {
+    width: 100%;
+    padding: 5px 0;
     background-color: black;
     color: white;
-    text-align: center;
-    padding-top: 20px;
+    margin-bottom: 40px;
+    font-size: 1.2em;
 }
+
+.contact-header h2 {
+    padding-left: 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+.contact-content {
+    border: 2px solid white;
+    margin: 0 20px;
+    border-radius: 25px;
+    background-color: thistle;
+    color: black;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-content button {
+    border-style: none;
+    padding: 15px;
+    color: black;
+    background-color: thistle;
+    border-radius: 10px;
+    border: 4px solid black;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.8em;
+    margin-bottom: 80px;
+}
+
+.contact-content button:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-content h3 {
+    font-size: 1.4em;
+    margin-top: -20px;
+}
+
+.contact-content h3 a {
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+
+.contact-content h3 a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: black;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #c2a1c2;
+}
+
+footer a:hover {
+    color: #8b538b;
+}
+
+.footer-links a {
+    color: white;
+}
+
+.footer-links a:hover {
+    color: thistle;
+}
+
+
+/*************** DESKTOP VERSION (800px +) ********************/ 
+
+@media screen and (min-width: 800px) {
+
+
+    /* HEADER */
+
+    .header-text {
+        font-size: 1.5em;
+    }
+
+    /* SERVICES */
+
+    .services h2 {
+        padding: 0 80px;
+    }
+
+    .services p {
+        padding: 0 25%;
+        margin-bottom: 80px;
+    }
+
+}
+
+
+/**************** DESKTOP VERSION (1000px +) ********************/
+
+@media screen and (min-width: 1000px) {
+
+    /* MENU AND NAVIGATION BAR */
+
+    .menu h1 {
+        margin-bottom: 0;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    #desktop-nav {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        width: 75%;
+        padding-left: 25%;
+        margin: 0;
+    }
+
+    #desktop-nav a {
+        padding: 20px 30px;
+        padding-top: 0;
+        text-decoration: none;
+        font-size: 1.5em;
+        color: white;
+    }
+
+    #desktop-nav a:hover {
+        color: thistle;
+    }
+
+    /* HEADER */
+
+    header {
+        margin-bottom: 150px;
+    }
+
+    header img {
+        width: 75%;
+        padding-left: 25%;
+    }
+
+    .header-text {
+        font-size: 1.8em;
+        padding-left: 50px;
+        bottom: 20%;
+    }
+
+    header button {
+        font-size: 1.2em;
+        width: 300px;
+        margin-left: -150px;
+        padding: 20px;
+        bottom: -60px;
+    }
+
+    /* SERVICES */
+
+    #services {
+        font-size: 1.8em;
+        padding-left: 40px;
+    } 
+
+    .services-img-wrapper {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .services-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .services h2 {
+        font-size: 2em;
+        padding: 50px 120px;
+    }
+
+    .services h3 {
+        font-size: 1.8em;
+    }
+
+    .services p {
+        font-size: 1.5em;
+        margin-bottom: 150px;
+    }
+
+    .services button {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+    #services-end-link {
+        margin-bottom: 40px;
+    }
+
+    /* DESCRIPTION */
+
+    .description {
+        height: 1300px;
+    }
+
+    .description h2 {
+        font-size: 2.5em;
+    }
+
+    .description p {
+        font-size: 1.8em;
+    }
+
+    .description ul {
+        font-size: 2em;
+        top: 45%;
+    }
+
+    /* ESTIMATE SECTION */
+
+    .estimate-section h2 {
+        font-size: 2.5em;
+    }
+
+    .estimate-section button {
+        font-size: 1.2em;
+        padding: 20px;
+    }
+
+
+    /* CONTACT ME */
+
+    #contact-me {
+        font-size: 1.8em;
+        padding-left: 40px;
+    }
+
+    .contact-content {
+        margin: 50px;
+    }
+
+    /* FOOTER */
+
+    footer {
+        margin-top: 50px;
+    }    
+}
+
+    
