@@ -2,6 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Patrick Hand', cursive;
+    background-image: url("https://www.seekpng.com/png/detail/421-4210159_purple-smoke-transparent-download-purple-fog-transparent-background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 /****************** MOBILE VERSION ******************/
@@ -264,6 +268,21 @@ main h1 {
 #form2 #submit2:hover {
     background-color: white;
     color: black;
+}
+
+#form2 p {
+    color: white;
+    margin: 0;
+    margin-bottom: 12px;
+    font-size: 1.2em;
+}
+
+#form2 a {
+    color: white;
+}
+
+#form2 a:hover {
+    color: thistle;
 }
 
 /* p link */
