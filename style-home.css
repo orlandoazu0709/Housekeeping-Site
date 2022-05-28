@@ -138,9 +138,9 @@ li a:hover {
 header {
     position: relative;
     width: 100%;
-    margin-top: 70px;
     text-align: left;
-    margin-bottom: 120px;
+    margin: 8em 0;
+    margin-top: 15em;
 }
 
 header img {
@@ -150,9 +150,9 @@ header img {
 
 .header-text{
     position: absolute;
-    bottom: 0%;
+    bottom: 15%;
     left: 30px;
-    font-size: 1em;
+    font-size: 1.2em;
     padding-right: 45%;
 }
 
@@ -162,21 +162,23 @@ header img {
 
 header button {
     position: absolute;
-    background-color: #8b538b;
+    background-color: /*#8b538b;*/ black;
     color: white;
     width: 150px;
     padding: 8px;
     text-align: center;
     left: 50%;
     margin-left: -75px;
-    bottom: -80px;
+    bottom: -60px;
     border-style: none;
     border-radius: 10px;
-    border: 4px solid #8b538b
+    border: 4px solid /*#8b538b*/ black;
 }
 
 header button:hover {
     border: 4px solid black;
+    background-color: thistle;
+    color: black;
 }
 
 /* SERVICES */
@@ -321,11 +323,14 @@ header button:hover {
 }
 
 .estimate-section button:hover {
-    background-color: thistle;
+    background-color: white;
     color: black;
 }
 
 /* CONTACT SECTION */
+.contact-section {
+    display: none;
+}
 
 .contact-header {
     width: 100%;
@@ -424,17 +429,22 @@ footer a:hover {
 
 /*************** DESKTOP VERSION (800px +) ********************/ 
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 750px) {
 
 
     /* HEADER */
 
-    .header {
-        margin-top: 20px;
+    header {
+        margin: 6em 0;
     }
     
     .header-text {
         font-size: 1.5em;
+        bottom: 25%;
+    }
+
+    header button {
+        bottom: 40px;
     }
 
     /* SERVICES */
@@ -499,7 +509,7 @@ footer a:hover {
     /* HEADER */
 
     header {
-        margin-bottom: 150px;
+        margin: 3em 0;
     }
 
     header img {
@@ -510,7 +520,7 @@ footer a:hover {
     .header-text {
         font-size: 1.8em;
         padding-left: 50px;
-        bottom: 15%;
+        bottom: 30%;
     }
 
     header button {
@@ -518,7 +528,7 @@ footer a:hover {
         width: 300px;
         margin-left: -150px;
         padding: 20px;
-        bottom: -60px;
+        bottom: 75px;
     }
 
     /* SERVICES */

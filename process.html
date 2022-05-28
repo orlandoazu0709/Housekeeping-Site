@@ -15,7 +15,7 @@
 
   <body>
     <div class="menu">
-      <h1>Cleaning Services</h1>
+      <a href="index-home.html"><img id="cleaning-logo" src="cleaning-logo.png" alt="Cleaning logo"></a>
       <img  class="menu-icon-bottom icon" onclick="toggleMenu()" src="menu-icon2.png" alt="active menu icon">
       <img  class="menu-icon-top icon" src="menu-icon1.png" onclick="toggleMenu()" alt="inactive menu icon">
       <img  id="cancel-icon1" class="cancel-icon-bottom icon" src="cancel-icon1.png" onclick="toggleMenu()" alt="inactive cancel icon">
@@ -30,14 +30,21 @@
     <nav id="nav">
       <ul>
           <li><a href="index-home.html#services">Services</a></li>
-          <li><a href="#">Cleaning Process</a></li>
+          <li><a href="process.html">Cleaning Process</a></li>
           <li><a href="contact-page.html">Free Estimate</a></li>
-          <li id="last"><a href="#contact-page.html">Contact Me</a></li>
+          <li id="last"><a href="contact-page.html">Contact Me</a></li>
       </ul>
     </nav>
 
     <header>
         <h1>Our Cleaning Process.</h1>
+        <div class="container">
+          <a id="chevron-link" href="#section1">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          </a>
+        </div>
     </header>
     <main>
         <div class="box-wrap">
@@ -47,41 +54,48 @@
               <p>We make sure to keep your home clean and tidy so you can focus on the things that really matter in life. You can be sure to always have peace of mind, and truly be able to say <i>Home Sweet Home</i>.</p>
           </div>
           <div class="box-img">
-            <img src="https://p4.wallpaperbetter.com/wallpaper/457/752/924/design-sofa-interior-window-wallpaper-preview.jpg" alt="Home interior image">
+            <img src="interior-img.png" alt="Home interior image">
           </div>
         </div>
         <div>
           <div class="box-section">
               <h2>Meticulous. Transparent. Professional.</h2>
-              <p>At [insert company name], we make sure to provide you with premium services and the best cleaning possible, tailored specifically to fit your needs. That's why we offer transparent cleaning plans so you can decide exactly what goes into cleaning your home, and can rest assured to receive the best service.</p>
-              <h3>We let you take control, so you can decide exactly what products you want in order to keep your home clean and fresh.</h3>
-              <h3>Some custom requests to consider:</h3>
-              <ul>
-                <li>Chlorine free products</li>
-
-              </ul>
+              <h3>At <span>Angie Cleaning</span>, we make sure to provide you with premium services and the best cleaning possible, tailored specifically to fit your needs. That's why we offer transparent cleaning plans with customizable options so you can decide exactly what goes into cleaning your home, and can rest assured to receive the best service.</h3>
           </div>
-          <div class="box-img">
-            <img src="https://c4.wallpaperflare.com/wallpaper/65/52/983/purple-interior-design-wallpaper-preview.jpg" alt="Interior home image">
+          <div class="img2-wrap">
+            <div class="box-img img2">
+              <img src="interior-img2.png" alt="Interior home image">
+            </div>
+          </div>
+          <div class="custom-wrap">
+            <h2>Available customizations:</h2>
+            <div class="custom-box">
+              <h2>Non-toxic</h2>
+              <img class="custom-img" src="non-toxic.png" alt="non-toxic symbol">
+            </div>
+            <div class="custom-box">
+              <img class="custom-img" src="bleach.png" alt="bleach container icon">
+              <h2>Bleach free</h2>
+            </div>
+            <div class="custom-box">
+              <h2>Pet friendly</h2>
+              <img class="custom-img" src="paw.png" alt="dog paw icon">
+            </div>
+            <div class="custom-box">
+              <img class="custom-img" src="bed.png" alt="bedroom icon">
+              <h2>Partial cleanings</h2>
+            </div>
+            <div class="custom-box">
+              <h2>Custom products</h2>
+              <img class="custom-img" src="cleaning-supplies.png" alt="cleaning supplies icon">
+            </div>
+            <p style="text-align: center; margin: 10px 40px;">*Custom products provided by client.</p>
+            <form action="contact-page.html">
+              <button type="submit">Contact us for more information</button>
+            </form>
           </div>
         </div>
     </main>
-
-
-    <h2>Get the size of the current screen/window</h2>
-<p>The example displays the browser window's height and width: (NOT including toolbars/scrollbars)
-
-<p id="demo"></p>
-
-<script>
-var w = window.innerWidth;
-var h = window.innerHeight;
-
-var x = document.getElementById("demo");
-x.innerHTML = "Browser width: " + w + ", height: " + h + ".";
-</script>
-
-
     <footer>
         <div class="footer-links">
           <a href="index-home.html#services">Services</a>

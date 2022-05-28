@@ -13,9 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand&display=swap" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="clickLoad()">
     <div class="menu">
-      <h1>Cleaning Services</h1>
+      <a href="index-home.html"><img id="cleaning-logo" src="cleaning-logo.png" alt="Cleaning logo"></a>
       <img  class="menu-icon-bottom icon" onclick="toggleMenu()" src="menu-icon2.png" alt="active menu icon">
       <img  class="menu-icon-top icon" src="menu-icon1.png" onclick="toggleMenu()" alt="inactive menu icon">
       <img  id="cancel-icon1" class="cancel-icon-bottom icon" src="cancel-icon1.png" onclick="toggleMenu()" alt="inactive cancel icon">
@@ -30,27 +30,30 @@
     <nav id="nav">
       <ul>
           <li><a href="index-home.html#services">Services</a></li>
-          <li><a href="#">Cleaning Process</a></li>
+          <li><a href="process.html">Cleaning Process</a></li>
           <li><a href="contact-page.html">Free Estimate</a></li>
-          <li id="last"><a href="#contact-page.html">Contact Me</a></li>
+          <li id="last"><a href="contact-page.html">Contact Me</a></li>
       </ul>
     </nav>
 
     <main>
-        <h1>Contact Me</h1>
+       <!-- <div class="main-header">
+          <h1>Contact Me</h1>
+        </div> -->
         <div class="form-header">
-          <h2>Contact form</h2>
+          <h1>Contact me</h1>
           <button id="gen-b1" onclick="toggleForm1()">v</button>
           <button id="gen-b2" onclick="toggleForm1()">v</button>
         </div>
+        <h2 id="contact-desc" style="text-align:center;">For any general inquiries.</h2>
         <form  id="form1" class="form" action="https://formspree.io/f/mvolzrve" method="POST">
-            <label class="form-child" for="email">Email *</label>
+            <label class="form-child subhead" for="email">Email</label>
             <input class="form-child input" type="text" id="email" name="_replyto" placeholder="Your email" required>
-            <label class="form-child" for="subject">Subject *</label>
+            <label class="form-child subhead" for="subject">Subject</label>
             <input class="form-child input" type="text" id="subject" name="subject" placeholder="Subject" required>
-            <label class="form-child" for="message">Message *</label>
+            <label class="form-child subhead" for="message">Message</label>
             <textarea class="form-child input message" name="message" placeholder="How can we help you today?" required></textarea>
-            <input class="form-child input" type="submit" value="submit" id="submit">
+            <input id="submit" class="form-child input button" type="submit" value="submit">
         </form>
         <div class="form-header header2">
           <h2>Get a free estimate</h2>
@@ -58,25 +61,29 @@
           <button id="est-b2" onclick="toggleForm2()">v</button>
         </div>
         <form  id="form2" class="form" action="https://formspree.io/f/mrgjelyj" method="POST">
-          <label class="form-child" for="name2">Name *</label>
+          <label class="form-child" for="name2">Name</label>
           <input class="form-child input" type="text" id="name2" name="name" placeholder="Your name" required>
-          <label class="form-child" for="email2">Email *</label>
+          <label class="form-child" for="email2">Email</label>
           <input class="form-child input" type="text" id="email2" name="_replyto" placeholder="Your email" required>
           <label class="form-child" for="phone2">Phone</label>
           <input class="form-child input" type="text" id="phone2" name="phone number" placeholder="Your phone number">
-          <label class="form-child" for="location2">Zip code *</label>
+          <label class="form-child" for="location2">Zip code</label>
           <input class="form-child input" type="text" id="location2" name="zip code" placeholder="Your zip code">
           <p>See our <a href="#">locations</a> of service.</p>
           <label class="form-child" for="message">Message</label>
           <textarea class="form-child input message" name="message" placeholder="What services are you interested in?"></textarea>
-          <input class="form-child input" type="submit" value="submit" id="submit2">
+          <input class="form-child input button" type="submit" value="submit" id="submit2">
       </form>
-      <p>Overview of our <a href="index-home.html#services">services</a>.</p>
+      <p id="p">Overview of our <a href="index-home.html#services">services</a>.</p>
       <div class="contact-text">
-        <h3>Call now!</h3>
-        <a href="tel: 8433689787">843.368.9787</a>
-        <h3>Email me!</h3>
-        <a href="mailto:azuarah_2504@hotmail.com">azuarah_2504@hotmail.com</a>
+        <form action="tel: 8433689787">
+          <button type="submit">Call now <img class="btn-img" src="call-btn.png" alt=""><img class="btn-img-active" src="call-btn-active.png" alt=""></button>
+        </form>
+        <p>843.368.9787</p>
+        <form action="mailto:orly090702@gmail.com">
+          <button id="button-email" type="submit">Email<img class="btn-email btn-img" src="email-btn.png" alt=""><img class="btn-email btn-img-active" src="email-btn-active.png" alt=""></button>
+        </form>
+        <p>azuarah_2504@hotmail.com</p>
       </div>
     </main>
 
