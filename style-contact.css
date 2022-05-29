@@ -88,7 +88,9 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 nav ul{
@@ -235,6 +237,9 @@ main {
     background-color: /*thistle;*/ white;
     color: black;
     margin-top: -70px;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
     display: none;
 }
 
@@ -283,6 +288,7 @@ main {
 /* form 2 */
 #form2 {
     background-color: black;
+    display: none; /* this hides FREE ESTIMATE FORM */
 }
 
 #form2 .form-child {

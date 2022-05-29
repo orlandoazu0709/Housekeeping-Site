@@ -88,7 +88,9 @@ body {
     width: 100%;
     padding: 0;
     margin: 0;
-    display: none;
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s;
 }
 
 nav ul{
@@ -132,6 +134,32 @@ li a:hover {
     color: white;
     background-color: #8b538b;
 }
+
+/* SCROLL BUTTON */
+#scroll-btn {
+    position: fixed;
+    bottom: -160px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    border-style: none;
+    border-radius: 30px;
+    transition: bottom 0.2s;
+    z-index: 1001;
+    background-color: white;
+}
+
+#scroll-btn img {
+    width: 100%;
+    height: 100%;
+}
+
+#scroll-btn:hover {
+    background-color: #c2a1c2;
+}
+
+
 
 /* HEADER */
 
