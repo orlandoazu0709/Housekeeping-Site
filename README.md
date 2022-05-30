@@ -1,4 +1,3 @@
 # Housekeeping-Site
-Housekeeping and cleaning services.
+A custom coded, fully responsive site for a housekeeping and cleaning services company.
 
-Work in progress
