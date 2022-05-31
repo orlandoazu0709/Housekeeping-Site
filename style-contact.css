@@ -160,16 +160,21 @@ main {
     flex-direction: row;
     justify-content:center;
     align-items: center;
-    margin-bottom: 20px;
     margin-top: 60px;
-    margin-bottom: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     border-radius: 15px;
     letter-spacing: .05cm;
 }
 
 .form-header h1 {
     font-size: 2.5em;
-    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+#contact-desc {
+    margin: 15px 20px;
 }
 
 .form-header button {
@@ -182,6 +187,8 @@ main {
     font-stretch: extra-expanded;
     border-width: 2px;
     margin: 10px;
+    margin-top: 35px;
+    margin-bottom: 0;
 }
 
 .form-header button:hover {
@@ -499,12 +506,17 @@ footer a:hover {
     /* headers */
     .form-header {
         margin: auto;
+        margin-top: 80px;
         width: 60%;
     }
 
     .form-header h1 {
         font-size: 4em;
         padding: 30px;
+    }
+
+    .form-header button {
+        margin-top: 55px;
     }
 
     .header2 {

@@ -49,15 +49,15 @@ function toggleForm1() {
         form.style.margin = "auto";
         btn1.style.display = "none";
         btn2.style.display = "block";
-        desc.style.display = "none";
+        /*desc.style.display = "none";*/
         p.style.marginTop = "100px";
     } else {
         form.style.height = "0px";
-        form.style.margin = "0px";
+        form.style.marginTop = "0px";
         form.style.padding = "0px";
         btn1.style.display = "block";
         btn2.style.display = "none";
-        desc.style.display = "block";
+       /* desc.style.display = "block";*/
         p.style.marginTop = "250px";
     }
 }
@@ -106,7 +106,7 @@ function scrollFunction2() {
     else {
         btn.style.bottom = "-160px";
     }
-}
+} 
 
 function topFunction() {
     document.body.scrollTop = 0;
@@ -115,13 +115,13 @@ function topFunction() {
 
 function clickLoad() {
     document.getElementById("form1").reset();
-    setTimeout(document.getElementById("form1").style.display = "flex", 5000);
+    setTimeout(document.getElementById("form1").style.display = "flex", 800);
     document.getElementById("gen-b1").click();
     /*setTimeout(document.getElementById("gen-b1").click(), 5000);*/
 }
 
 if(window.attachEvent) {
-    window.attachEvent("onload", setTimeout(clickLoad, 2000));
+    window.attachEvent("onload", setTimeout(clickLoad, 800));
 } else {
-    window.addEventListener("load", setTimeout(clickLoad, 1000), false);
+    window.addEventListener("load", setTimeout(clickLoad, 800), false);
 }

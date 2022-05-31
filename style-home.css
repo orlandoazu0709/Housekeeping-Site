@@ -559,6 +559,11 @@ footer a:hover {
         bottom: 75px;
     }
 
+    /* SCROLL BUTTON*/
+    #scroll-btn {
+        right: 60px;
+    }
+
     /* SERVICES */
 
     #services {
