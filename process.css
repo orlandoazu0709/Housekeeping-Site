@@ -254,6 +254,7 @@ header h1 {
     transition: bottom 0.2s;
     z-index: 1001;
     background: white;
+    box-shadow: 5px 5px 5px gray;
 }
 
 #scroll-btn img {
@@ -377,6 +378,7 @@ footer {
 footer a {
     text-decoration: none;
     color: #c2a1c2;
+    margin: 4px 0;
 }
 
 footer a:hover {
@@ -389,6 +391,11 @@ footer a:hover {
 
 .footer-links a:hover {
     color: thistle;
+}
+
+footer p {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 

@@ -276,7 +276,7 @@ main {
     display: block;
     width: 70%;
     margin-top: 40px;
-    box-shadow: 5px 5px 20px black;
+    box-shadow: 10px 5px 10px black;
 }
 
 .message {
@@ -439,6 +439,7 @@ footer {
 footer a {
     text-decoration: none;
     color: #c2a1c2;
+    margin: 4px 0;
 }
 
 footer a:hover {
@@ -451,6 +452,11 @@ footer a:hover {
 
 .footer-links a:hover {
     color: thistle;
+}
+
+footer p {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 
