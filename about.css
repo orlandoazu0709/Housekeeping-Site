@@ -411,6 +411,7 @@ header h1 {
     text-align: center;
     /*text-shadow: black 10px 5px 10px;*/
     letter-spacing: 0.04cm;
+    font-weight: 900;
 }
 
 .custom-wrap {
